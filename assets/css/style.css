@@ -56,7 +56,9 @@
 
   img {
     float: left;
-    padding: 5px;
+    padding: 10px;
+    height: 200px;
+    margin: 5px;
   
   }
 
@@ -119,7 +121,7 @@ input[type=text] {
   font-family:Arial, Helvetica, sans-serif;
   box-shadow: none; 
   padding: 0em; 
-  background-color: white; 
+  background-color: #ffffff; 
   
  
 }
@@ -138,44 +140,66 @@ button {
 }
 .column {
   float: left;
-  width: 48%; 
+  width: 50%; 
   height: 60%; 
-  color: white; 
+  color: #ffffff; 
   position: relative; 
   text-align: center; 
+  background-color: #ffffff; 
 
+}
+.row {
+  background-color: #ffffff;
+  width: 99.5%;
+  border: solid; 
+  border-color:#cccccc;
+  border-top: none; 
 }
 .row::after {
   content: "";
   clear: both;
-  display: table;
+  display: table;  
+  background-color: #ffffff; 
+}
+
+.portfolio {
+  background-color: #ffffff;
+    border:solid;
+    border-bottom: none;
+    border-color:#cccccc; 
+    padding: 10px;
+    margin: 0;
+    text-align: left;  
+    font-family:'Georgia', Times, Times New Roman, serif;
+    color: #777777;
+    word-spacing: 8px;
 }
 .hangman {
   position: absolute;
-  top: 50%; 
-  left: 50%; 
+  top: 60%; 
+  left: 42%; 
   transform: translate(-50%, -50%);
   background-color:#4aaaa5;
   font-size: 35px;
   text-align: center;
-  color: white;
-  padding-right: 30px; 
-  padding-left: 30px; 
+  color: #ffffff;
+  padding-right: 8px; 
+  padding-left: 8px; 
   margin: 15px; 
   background-size: auto; 
   width: 80%
 }
 .rpg-game { 
   position: absolute;
-  top: 50%;  
-  left: 50%; 
+  top: 40%;  
+  left: 42%; 
   transform: translate(-50%, 50%);
   background-color:#4aaaa5;
   font-size: 35px;
   text-align: center;
-  color: white;
-  padding-right: 30px; 
-  padding-left: 30px; 
+  color: #ffffff;
+  padding-right: 8.5px; 
+  padding-left: 8px; 
   margin: 15px; 
   background-size: auto; 
   width: 80%;
@@ -183,15 +207,15 @@ button {
 }
 .trivia-game {
   position: absolute;
-  top: 50%; 
-  left: 50%; 
+  top: 60%; 
+  left: 42%; 
   transform: translate(-50%, -50%);
   background-color:#4aaaa5;
   font-size: 35px;
   text-align: center;
-  color: white;
-  padding-right: 30px; 
-  padding-left: 30px; 
+  color: #ffffff;
+  padding-right: 8px; 
+  padding-left: 8px; 
   margin: 15px; 
   background-size: auto; 
   width: 80%
@@ -204,7 +228,7 @@ button {
   background-color:#4aaaa5;
   font-size: 35px;
   text-align: center;
-  color: white;
+  color: #ffffff;
   padding-right: 30px; 
   padding-left: 30px; 
   margin: 15px; 
@@ -214,31 +238,30 @@ button {
 .rock-paper-scissors {
   position: absolute;
   top: 50%; 
-  left: 50%; 
+  left: 42%; 
   transform: translate(-50%, -50%);
   background-color:#4aaaa5;
   font-size: 35px;
   text-align: center;
-  color: white;
-  padding-right: 30px; 
-  padding-left: 30px; 
+  color: #ffffff;
+  padding-right: 8px; 
+  padding-left: 8px; 
   margin: 15px; 
   background-size: auto; 
   width: 80%
 }
 
-
-
 #footer {
-    padding:5px;
+    width:100%;  
      overflow: hidden;
+     padding: 4px;    
      background-color: #4aaaa5;
-   }
+}
 
 #bottom-footer {
     padding:10px;
     overflow: hidden;
-    background-color:#666666;
+    background-color:#666666;  
 }   
 
 .fotter-quote {
