@@ -12,7 +12,6 @@
     margin-bottom: 20px!important;
     width: 100%;
     
-    
   }
   .navbar-text {
         display: inline-block;
@@ -22,10 +21,8 @@
         color:#ffffff;
         width: 20%;
         height: 50px; 
-        padding:10px;
-        border: solid; 
-        border-color: #777777;
-        border-width: 2px; 
+        padding:20px;
+        border: none; 
         font-size: 25px;
         text-align:center;
         margin: auto;   
@@ -47,9 +44,9 @@
     }
 
   body {
-    background-image: url ("basic-portfolio/assets/images/united-squares-negative.png");
+    background-image: url("../images/united-squares-negative.png");
     background-position: right top;
-    background color: #cccccc; 
+    background-color: #cccccc; 
     width: 960px;
     padding: 100px;
     margin: 9px auto;    
@@ -66,7 +63,7 @@
   h2 { 
     color:#4aaaa5;
     background-color: #ffffff;
-
+    
   }
   .aboutme {
     background-color: #ffffff;
@@ -122,6 +119,7 @@ input[type=text] {
   font-family:Arial, Helvetica, sans-serif;
   box-shadow: none; 
   padding: 0em; 
+  background-color: white; 
   
  
 }
@@ -138,19 +136,25 @@ button {
   height:60px;
   font-family: Arial, Helvetica, sans-serif
 }
-
-.container {
-  padding: 20px; 
-  position: relative;
-  text-align: center; 
+.column {
+  float: left;
+  width: 48%; 
+  height: 60%; 
   color: white; 
-  font-stretch: expanded; 
+  position: relative; 
+  text-align: center; 
+
 }
-.centered {
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.hangman {
   position: absolute;
-  top: 74%; 
-  left: 36%; 
-  transform: translate(-100%, 600%);
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%);
   background-color:#4aaaa5;
   font-size: 35px;
   text-align: center;
@@ -159,8 +163,70 @@ button {
   padding-left: 30px; 
   margin: 15px; 
   background-size: auto; 
-  width: 30%
+  width: 80%
 }
+.rpg-game { 
+  position: absolute;
+  top: 50%;  
+  left: 50%; 
+  transform: translate(-50%, 50%);
+  background-color:#4aaaa5;
+  font-size: 35px;
+  text-align: center;
+  color: white;
+  padding-right: 30px; 
+  padding-left: 30px; 
+  margin: 15px; 
+  background-size: auto; 
+  width: 80%;
+  
+}
+.trivia-game {
+  position: absolute;
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  background-color:#4aaaa5;
+  font-size: 35px;
+  text-align: center;
+  color: white;
+  padding-right: 30px; 
+  padding-left: 30px; 
+  margin: 15px; 
+  background-size: auto; 
+  width: 80%
+}
+.rutgers-info-widget {
+  position: absolute;
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  background-color:#4aaaa5;
+  font-size: 35px;
+  text-align: center;
+  color: white;
+  padding-right: 30px; 
+  padding-left: 30px; 
+  margin: 15px; 
+  background-size: auto; 
+  width: 80%
+}
+.rock-paper-scissors {
+  position: absolute;
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  background-color:#4aaaa5;
+  font-size: 35px;
+  text-align: center;
+  color: white;
+  padding-right: 30px; 
+  padding-left: 30px; 
+  margin: 15px; 
+  background-size: auto; 
+  width: 80%
+}
+
 
 
 #footer {
